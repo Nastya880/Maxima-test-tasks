@@ -5,6 +5,7 @@
     <link rel="stylesheet" type="text/css" href="main.css">
     <meta charset="utf-8">
     <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="feedback-form.css">
 </head>
 <body>
 <div class="container">
@@ -92,6 +93,22 @@
         </div>
     </div>
 
+    <div class="feedback-form">
+        <h2>Обратная связь</h2>
+        <form action="#" method="POST">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="message">Сообщение:</label>
+            <textarea id="message" name="message" required></textarea>
+    
+            <input type="submit" value="Отправить">
+        </form>
+    </div>
+    
     <footer class="footer">
         &copy; 2023 Maxima School. Все права защищены.
     </footer>
