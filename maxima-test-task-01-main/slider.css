@@ -1,8 +1,5 @@
-.slide-item img {
-    width: 100%;
-}
 .slider-container {
-    max-width: 1000px;
+    max-width: 1200px;
     position: relative;
     margin: auto;
 }
