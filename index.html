@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="slider.css">
     <link rel="stylesheet" href="feedback-form.css">
+    <link rel="stylesheet" href="modal.css">
 </head>
 <body>
 <div class="container">
@@ -112,7 +113,37 @@
     <footer class="footer">
         &copy; 2023 Maxima School. Все права защищены.
     </footer>
+
+    <div class="nav__create nav__create--header">
+        <ul>
+            <li><a href="#" class ="btn" data-popup-btn = 'Create'>Создать пользователя</a></li>    
+        </ul>   
+    </div>
+
+    <div class="feedback-form">
+        <div class="popup" id ='Create' data-popup>
+            <div class="popup__body">
+                <div class="popup__content">
+                    <div class="popup__close">X</div>
+                    <h2 class="popup_title">Создать пользователя</h2>
+                    <form class='form-create' action="index.html" name="f2">
+                        <input class="form-create__input" type="text" placeholder="FIO" name="fio">
+                        <input class="form-create__input" type="tel" placeholder="Number phone" name="telephone">
+                        <input class="form-create__input" type="email" placeholder="Email" name="email">
+                        <input class="form-create__input" type="login" placeholder="Login" name="login">
+                        <input class="form-create__input" type="password" placeholder="Password" name="password">
+                        <input class="form-create__input" type="text" placeholder="User group" name="user-group">
+                        <button class="btn btn--form" id="btn-form--login" type="submit">Создать пользователя</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
 <script src="js/script.js"></script>
+<script src="js/modal.js"></script>
 </body>
+</div>
+
 </html>
