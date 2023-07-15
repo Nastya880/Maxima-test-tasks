@@ -4,6 +4,7 @@
     <title>Maxima school</title>
     <link rel="stylesheet" type="text/css" href="main.css">
     <meta charset="utf-8">
+    <link rel="stylesheet" href="slider.css">
 </head>
 <body>
 <div class="container">
@@ -14,6 +15,37 @@
             <li><a href="#">О нас</a></li>
             <li><a href="#">Контакты</a></li>
         </ul>
+    </div>
+
+    <div class="slider-container">
+        <div class="slide-item fade">
+            <img src="file.jpg" alt="">
+        </div>
+        
+        <div class="slide-item fade">
+            <img src="file.jpg" alt="">
+        </div>
+        
+        <div class="slide-item fade">
+            <img src="file.jpg" alt="">
+        </div>
+        
+        <div class="slide-item fade">
+            <img src="file.jpg" alt="">
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+        <a class="next" onclick="plusSlides(1)">&#10095</a>
+    </div>
+
+    <br>
+    
+    <div style="text-align: center;">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
     </div>
 
     <div class="news-container">
@@ -64,5 +96,6 @@
         &copy; 2023 Maxima School. Все права защищены.
     </footer>
 </div>
+<script src="js/script.js"></script>
 </body>
 </html>
